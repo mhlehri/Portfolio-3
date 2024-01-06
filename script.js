@@ -10,3 +10,18 @@ window.addEventListener("scroll", () => {
     button.classList.add("hidden");
   }
 });
+
+const boxes = document.querySelectorAll(".box");
+
+window.addEventListener("scroll", () => {
+  const windowH = window.innerHeight;
+
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+    if (boxTop < windowH) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
+});
