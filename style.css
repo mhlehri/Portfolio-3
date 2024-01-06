@@ -14,10 +14,7 @@ body {
 }
 
 /* common styles */
-button:hover {
-  transform: scale(0.97);
-  cursor: pointer;
-}
+
 button {
   font-size: 20px;
   font-weight: 600;
@@ -26,25 +23,24 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  transition: linear 0.2s;
+  cursor: pointer;
+  border: 4px solid #ffc53d;
 }
 .btn-outline {
   color: #ffc53d;
   background: transparent;
   border: 4px double #ffc53d;
 }
-.bg-primary {
-  background-color: #ffc53d;
+.btn-outline:hover {
+  border-style: dashed;
 }
-.text-primary {
-  color: #ffc53d;
-}
+
 .title {
   width: fit-content;
   font-size: 40px;
   color: #ffc53d;
   text-align: center;
-  margin: 30px auto;
+  margin: 0 auto 30px auto;
   border-bottom: 4px solid #ffc53d;
   border-style: double;
 }
@@ -77,8 +73,9 @@ button {
   -webkit-text-stroke-color: #ffc53d;
   color: transparent;
 }
-ul {
-  list-style-type: none;
+li {
+  list-style-position: inside;
+  padding: 4px 0;
 }
 a {
   text-decoration: none;
@@ -87,6 +84,13 @@ a {
 .center {
   margin: 0 auto;
   width: 50%;
+}
+
+.item-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 input,
 textarea {
@@ -126,6 +130,7 @@ label {
   display: flex;
   gap: 20px;
   font-weight: 500;
+  list-style: none;
 }
 /* hero and about */
 
@@ -179,7 +184,7 @@ label {
 }
 
 /* skill styles */
-.skills {
+.screen-height {
   height: 100vh;
 }
 .tech {
@@ -194,16 +199,22 @@ label {
   display: flex;
   min-height: 140px;
   justify-content: center;
+  transition: linear 0.3s;
 }
-/* .tech div:nth-child(2) {
-  grid-row: span 2;
-} */
+.tech div:hover {
+  background: #ffc53d;
+}
+.tech div:hover img {
+  filter: drop-shadow(0px 0px 5px #00000046);
+}
 .tech img {
   width: 80px;
 }
 
 /* project styles */
-
+.project {
+  padding-top: 40px;
+}
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -211,6 +222,11 @@ label {
 }
 .project img {
   width: 500px;
+}
+.project-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* footer styles */
