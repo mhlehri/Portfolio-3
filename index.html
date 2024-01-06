@@ -62,7 +62,7 @@
               </h1>
               <p>A frontend developer.</p>
               <a href="/Assets/MH Lehri.pdf" download>
-                <button style="margin: 20px 0 0 0" class="flex-between">
+                <button style="margin: 20px 0 0 0" class="btn-flex">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -114,11 +114,11 @@
                 digital experiences. Let's collaborate to shape the future!
               </p>
               <a href="#portfolio"
-                ><button style="margin: 20px 0 0 0" class="flex-between">
+                ><button style="margin: 20px 0 0 0" class="btn-flex">
                   See My Latest Projects
                   <svg
                     fill="#11345d"
-                    width="30px"
+                    width="25px"
                     version="1.1"
                     id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -169,7 +169,7 @@
         </section>
       </div>
       <!-- Skills -->
-      <section class="container screen-height" id="skills">
+      <section class="container" id="skills">
         <div class="item-center">
           <h1 class="title stroke">
             <svg
@@ -227,7 +227,7 @@
               </p>
               <div class="flex-item">
                 <a href="https://primepress.netlify.app" target="_blank">
-                  <button class="flex-between">
+                  <button class="btn-flex">
                     <svg
                       viewBox="0 0 24 24"
                       version="1.1"
@@ -277,7 +277,7 @@
                   </button></a
                 >
                 <a href="https://github.com/mhlehri/PrimePress" target="_blank">
-                  <button class="flex-between btn-outline">
+                  <button class="btn-flex btn-outline">
                     <svg
                       viewBox="0 0 20 20"
                       version="1.1"
@@ -346,7 +346,8 @@
             </div>
           </div>
           <!-- project2 -->
-          <div class="flex-around">
+          <div class="flex-around reverse">
+            <div><img src="/Assets/ridewave.png" alt="" /></div>
             <div class="project-box">
               <h1>Ride Wave - Ride Share application</h1>
               <p>
@@ -411,7 +412,7 @@
                   </button>
                 </a>
                 <a href="https://github.com/mhlehri/RideWave" target="_blank">
-                  <button class="flex-between btn-outline">
+                  <button class="btn-flex btn-outline">
                     <svg
                       viewBox="0 0 20 20"
                       version="1.1"
@@ -475,7 +476,6 @@
                 </li>
               </ul>
             </div>
-            <div><img src="/Assets/ridewave.png" alt="" /></div>
           </div>
           <!-- project3 -->
           <div class="flex-around">
@@ -490,7 +490,7 @@
               </p>
               <div class="flex-item">
                 <a href="https://canoo1.netlify.app" target="_blank">
-                  <button class="flex-between">
+                  <button class="btn-flex">
                     <svg
                       viewBox="0 0 24 24"
                       version="1.1"
@@ -540,7 +540,7 @@
                   </button></a
                 >
                 <a href="https://github.com/mhlehri/Canoo" target="_blank">
-                  <button class="flex-between btn-outline">
+                  <button class="btn-flex btn-outline">
                     <svg
                       viewBox="0 0 20 20"
                       version="1.1"
@@ -608,10 +608,10 @@
         </div>
       </section>
       <!-- contact section -->
-      <section id="contact" class="contact container screen-height">
+      <section id="contact" class="contact container">
         <div class="item-center">
           <h1 class="title stroke">Contact me</h1>
-          <div class="flex-between">
+          <div class="flex-between contact-info">
             <div class="contact-url">
               <p>
                 EMail:
@@ -659,7 +659,7 @@
               <input type="text" id="subject" />
               <label for="message">Message</label>
               <textarea id="message" cols="30" rows="10"></textarea>
-              <button type="button" class="flex-between">
+              <button type="button" class="btn-flex">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -689,113 +689,9 @@
         </div>
       </section>
     </main>
-    <!-- <footer>
-      <div class="flex-around container">
-        <!-- social links -->
-    <!-- <ul class="footer-social">
-          <li>
-            <a href="">
-              <svg
-                fill="#ffc53d"
-                height="200px"
-                width="200px"
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="-143 145 512 512"
-                xml:space="preserve"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h232c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h29.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"
-                  ></path>
-                </g></svg
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><svg
-                viewBox="0 0 20 20"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                fill="#ffc53d"
-                stroke="#ffc53d"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <title>github [#142]</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g
-                    id="Page-1"
-                    stroke="none"
-                    stroke-width="1"
-                    fill="none"
-                    fill-rule="evenodd"
-                  >
-                    <g
-                      id="Dribbble-Light-Preview"
-                      transform="translate(-140.000000, -7559.000000)"
-                      fill="#ffc53d"
-                    >
-                      <g
-                        id="icons"
-                        transform="translate(56.000000, 160.000000)"
-                      >
-                        <path
-                          d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
-                          id="github-[#142]"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g></svg
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><svg
-                fill="#ffc53d"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
-                  ></path>
-                </g>
-              </svg>
-            </a>
-          </li>
-        </ul> -->
-    <!-- navigation links -->
-    <!-- <ul class="footer-nav">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul> -->
-    <!-- </div> -->
-    <!-- <div></div> -->
-    <!-- </footer>  -->
+    <footer>
+      <div class="flex-around">@MH Lehri 2024</div>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
