@@ -246,6 +246,7 @@ header {
   padding: 3px;
   border-radius: 5px;
   margin: 1px;
+  display: inline-block;
 }
 /* contact */
 .contact {

@@ -1,3 +1,4 @@
+// bact to top button
 const toTop = () => {
   scrollTo(0, 0);
 };
@@ -11,11 +12,10 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// animation scroll
 const boxes = document.querySelectorAll(".box");
-
 window.addEventListener("scroll", () => {
   const windowH = window.innerHeight;
-
   boxes.forEach((box) => {
     const boxTop = box.getBoundingClientRect().top;
     if (boxTop < windowH) {
