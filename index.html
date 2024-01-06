@@ -23,6 +23,34 @@
       </nav>
     </header>
     <main>
+      <button class="up-btn" id="up-btn" onclick="toTop()">
+        <svg
+          fill="#11345d"
+          width="30px"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          xml:space="preserve"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <g>
+              <g>
+                <path
+                  d="M505.752,304.894L271.085,70.227c-8.331-8.331-21.839-8.331-30.17,0L6.248,304.894C2.248,308.894,0,314.321,0,319.979 v106.667c0,19.006,22.979,28.524,36.418,15.085L256,222.149L475.582,441.73C489.021,455.17,512,445.651,512,426.645V319.979 C512,314.321,509.752,308.894,505.752,304.894z M469.333,375.142L271.085,176.894c-8.331-8.331-21.839-8.331-30.17,0 L42.667,375.142v-46.327L256,115.482l213.333,213.333V375.142z"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
       <div class="hero-about">
         <!-- hero section -->
         <section>
@@ -583,39 +611,81 @@
       <section id="contact" class="contact container screen-height">
         <div class="item-center">
           <h1 class="title stroke">Contact me</h1>
-          <form action="" class="center">
-            <label for="email">Email</label>
-            <input type="email" id="email" />
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" />
-            <label for="message">Message</label>
-            <textarea id="message" cols="30" rows="10"></textarea>
-            <button type="button" class="flex-between">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                width="25px"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z"
-                    stroke="#11345d"
-                    stroke-width="2"
+          <div class="flex-between">
+            <div class="contact-url">
+              <p>
+                EMail:
+                <a target="_blank" href="mailto:lehrimirza101@gmail.com"
+                  >lehrimirza101@gmail.com</a
+                >
+              </p>
+              <p>
+                LinkedIn:
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mahmud-hassan-lehri/"
+                  >mahmud hassan lehri</a
+                >
+              </p>
+              <p>
+                GitHub:
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/mahmudhassanlehri/"
+                  >mhlehri</a
+                >
+              </p>
+              <p>
+                Facebook:
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/mahmudhassanlehri/"
+                  >Mahmud Hassan Lehri</a
+                >
+              </p>
+              <p>
+                Instagram:
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/mahmud_hassan_lehri/"
+                  >mahmud_hassan_lehri
+                </a>
+              </p>
+            </div>
+            <form action="" class="contact-form">
+              <label for="email">Email</label>
+              <input type="email" id="email" />
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" />
+              <label for="message">Message</label>
+              <textarea id="message" cols="30" rows="10"></textarea>
+              <button type="button" class="flex-between">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  width="25px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  ></path>
-                </g>
-              </svg>
-              Send
-            </button>
-          </form>
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M10.3009 13.6949L20.102 3.89742M10.5795 14.1355L12.8019 18.5804C13.339 19.6545 13.6075 20.1916 13.9458 20.3356C14.2394 20.4606 14.575 20.4379 14.8492 20.2747C15.1651 20.0866 15.3591 19.5183 15.7472 18.3818L19.9463 6.08434C20.2845 5.09409 20.4535 4.59896 20.3378 4.27142C20.2371 3.98648 20.013 3.76234 19.7281 3.66167C19.4005 3.54595 18.9054 3.71502 17.9151 4.05315L5.61763 8.2523C4.48114 8.64037 3.91289 8.83441 3.72478 9.15032C3.56153 9.42447 3.53891 9.76007 3.66389 10.0536C3.80791 10.3919 4.34498 10.6605 5.41912 11.1975L9.86397 13.42C10.041 13.5085 10.1295 13.5527 10.2061 13.6118C10.2742 13.6643 10.3352 13.7253 10.3876 13.7933C10.4468 13.87 10.491 13.9585 10.5795 14.1355Z"
+                      stroke="#11345d"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

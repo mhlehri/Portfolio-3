@@ -34,7 +34,9 @@ button {
 .btn-outline:hover {
   border-style: dashed;
 }
-
+.hidden {
+  display: none;
+}
 .title {
   width: fit-content;
   font-size: 40px;
@@ -81,8 +83,7 @@ a {
   text-decoration: none;
   color: #11345d;
 }
-.center {
-  margin: 0 auto;
+.contact-form {
   width: 50%;
 }
 
@@ -229,6 +230,20 @@ label {
   gap: 20px;
 }
 
+/* contact */
+.contact-url {
+  font-weight: 700;
+  justify-self: start;
+}
+.contact-url p {
+  font-size: 18px;
+  padding: 5px 0;
+}
+.contact-url a {
+  text-decoration: underline;
+  color: #ffb300;
+}
+
 /* footer styles */
 footer {
   padding: 30px 0;
@@ -236,4 +251,12 @@ footer {
 footer svg {
   width: 30px;
   height: 30px;
+}
+
+/* scroll to top */
+.up-btn {
+  padding: 2px 10px;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
 }
